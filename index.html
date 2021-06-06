@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Crypchase</title>
+		<link rel="shortcut icon" href="./img/crypchase.svg" type="image/x-icon" />
+		<meta name="title" content="Crypchase" />
+		<meta
+			name="description"
+			content="Check the value of cryptocurrencies and all their information."
+		/>
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:url"
+			content="https://pandresvaldivia.github.io/Crypchase/"
+		/>
+		<meta property="og:title" content="Crypchase" />
+		<meta
+			property="og:description"
+			content="Check the value of cryptocurrencies and all their information."
+		/>
+		<meta property="og:image" content="./img/preview.png" />
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta
+			property="twitter:url"
+			content="https://pandresvaldivia.github.io/Crypchase/"
+		/>
+		<meta property="twitter:title" content="Crypchase" />
+		<meta
+			property="twitter:description"
+			content="Check the value of cryptocurrencies and all their information."
+		/>
+		<meta property="twitter:image" content="./img/preview.png" />
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/skeleton.css" />
+		<link rel="stylesheet" href="./css/app.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="one-half column">
+					<img src="img/cryptomonedas.png" />
+				</div>
+				<div class="one-half column">
+					<form id="form">
+						<div class="row">
+							<label>Currency</label>
+							<select class="u-full-width" id="coin" name="coin">
+								<option value="" selected disabled>Choose a currency</option>
+								<option value="USD">American dollar</option>
+								<option value="MXN">Mexican peso</option>
+								<option value="GBP">Pounds</option>
+								<option value="EUR">Euros</option>
+							</select>
+						</div>
+						<div class="row">
+							<div>
+								<label>Cryptocurrency</label>
+								<select
+									class="u-full-width"
+									id="crytocurrencie"
+									name="cryptocurrencie"
+								>
+									<option value="" selected disabled>
+										Choose a cryptocurrency
+									</option>
+								</select>
+							</div>
+						</div>
+						<input
+							class="button-primary u-full-width"
+							type="submit"
+							value="Quote"
+						/>
+
+						<div id="result" class="resultado"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/app.js" type="module"></script>
+	</body>
+</html>
